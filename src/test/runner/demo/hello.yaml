@@ -1,0 +1,22 @@
+metadata:
+  name: Demo
+  type: runner
+
+summaryTrendStats:
+  - avg
+  - min
+  - max
+  - p(99)
+  - count
+scenarios:
+  tc_sayHello:
+    executor: constant-arrival-rate
+    exec: tc_sayHello
+    rate: '1'
+    timeUnit: 1s
+    duration: 10s
+    preAllocatedVUs: '1'
+    maxVUs: '10'
+    gracefulStop: 3s
+thresholds:
+  grpc_req_duration{scenario:tc_sayHello}: []

@@ -1,0 +1,6 @@
+metadata:
+  name: Demo
+  type: suite
+
+demo/sayHello.ts:
+  tc_sayHello: Say Hello

@@ -1,0 +1,5 @@
+metadata:
+  name: Demo
+  type: env
+
+address: grpcbin.test.k6.io:9001

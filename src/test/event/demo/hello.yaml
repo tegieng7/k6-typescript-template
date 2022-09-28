@@ -1,0 +1,8 @@
+metadata:
+  name: Demo
+  type: event
+
+data: demo/hello.data.yaml
+env: demo/k6io.yaml
+runner: demo/hello.yaml
+suite: demo/hello.yaml

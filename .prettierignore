@@ -1,0 +1,6 @@
+.lintstagedrc.json
+
+dist
+node_modules
+
+src/jslib
