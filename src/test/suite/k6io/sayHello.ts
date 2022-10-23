@@ -32,6 +32,6 @@ export function tc_sayHello() {
   // use chai describe and expect from chaijs to verify the response
   describe('Service hello (use chaijs)', () => {
     expect(response.status === grpc.StatusOK, 'status is OK').to.be.true;
-    expect(data.reply === 'hello ' + firstName, 'reply message').to.be.true;
+    expect(data.reply === 'hello ' + firstName, 'reply message is correct').to.be.true;
   });
 }
