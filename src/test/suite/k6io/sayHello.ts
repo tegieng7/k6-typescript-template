@@ -1,6 +1,6 @@
 import { group, check } from 'k6';
 
-import { serviceSayHello } from 'service/demo/hello';
+import { serviceSayHello } from 'service/k6io/hello';
 import { getRandomData } from 'lib/testdata';
 
 // Data names

@@ -5,7 +5,7 @@ import { DIR_PROTO } from 'exec/path';
 import { TEST_ENV } from 'exec/testconfig';
 
 const client = new grpc.Client();
-client.load([DIR_PROTO], 'demo/hello.proto');
+client.load([DIR_PROTO], 'k6io/hello.proto');
 
 const address = TEST_ENV.address;
 

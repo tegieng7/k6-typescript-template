@@ -38,7 +38,7 @@
     "build": "yarn build:prepare && yarn webpack",
     "build:prepare": "rm -f dist/main.{js,js.map}",
     "k6": "bash cmd/k6.sh",
-    "k6:demo": "yarn k6 --event demo/hello.yaml",
+    "k6:demo": "yarn k6 --event k6io/demo.yaml",
     "lint": "yarn eslint src && yarn prettier --check src && yarn tsc",
     "lint:fix": "yarn eslint src --fix && yarn prettier --write src",
     "prepare": "bash cmd/prepare.sh"

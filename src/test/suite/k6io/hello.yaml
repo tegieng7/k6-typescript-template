@@ -2,5 +2,5 @@ metadata:
   name: Demo
   type: suite
 
-demo/sayHello.ts:
+k6io/sayHello.ts:
   tc_sayHello: Say Hello
