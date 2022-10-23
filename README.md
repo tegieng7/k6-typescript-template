@@ -28,29 +28,3 @@ Run the demo
 ```bash
 $ yarn k6:demo
 ```
-
-Run demo with config file
-
-```bash
-$ yarn k6 --event demo/hello.yaml
-```
-
-Run demo with options: test env, test suite, test data, test runner
-
-```bash
-$ yarn k6 --env demo/k6io.yaml --suite demo/hello.yaml --data demo/hello.data.yaml --runner demo/hello.yaml
-```
-
-## Writing own tests
-
-**Directory structure**
-
-**_`src/test/suite`_**
-
-**_`src/test/data`_**
-
-**_`src/test/env`_**
-
-**_`src/test/runner`_**
-
-**_`src/test/event`_**
