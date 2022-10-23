@@ -23,8 +23,6 @@ export function serviceSayHello(name: string) {
     });
   });
 
-  // console.log(JSON.stringify(response.message));
-
   client.close();
 
   return response;
