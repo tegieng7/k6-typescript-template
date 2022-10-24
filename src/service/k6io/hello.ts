@@ -8,6 +8,11 @@ client.load([DIR_PROTO], 'k6io/hello.proto');
 
 const address = TEST_ENV.address;
 
+/**
+ * Sevice SayHello
+ *
+ * @param name first name
+ */
 export function serviceSayHello(name: string) {
   client.connect(address, {
     // plaintext: false

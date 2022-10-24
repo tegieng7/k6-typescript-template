@@ -11,15 +11,30 @@ import { TEST_DATA_FILES } from 'exec/testconfig';
 
 export const TEST_DATA = loadTestData();
 
+/**
+ * Get random data row of test data
+ *
+ * @param dataName name of test data
+ */
 export function getRandomData(dataName: string) {
   const data = TEST_DATA[dataName];
   return randomItem(data);
 }
 
+/**
+ * Get test data by name
+ *
+ * @param dataName name of test data
+ */
 export function getData(dataName: string) {
   return TEST_DATA[dataName];
 }
 
+/**
+ * Parse test data file
+ *
+ * @param filepath path to test data file under src/test/data directory
+ */
 function parseFile(filepath: string) {
   if (!path.isAbsolute(filepath)) {
     filepath = path.resolve(DIR_TEST_DATA, filepath);
@@ -48,6 +63,11 @@ function parseFile(filepath: string) {
   return data;
 }
 
+/**
+ * Load test data from config
+ *
+ * @param testdataFiles {dataName: filepath, ...}
+ */
 function loadTestData(testdataFiles = TEST_DATA_FILES) {
   /* eslint-disable @typescript-eslint/no-explicit-any */
   const testdata: any = {};

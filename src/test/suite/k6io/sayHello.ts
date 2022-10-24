@@ -12,6 +12,9 @@ const DN = {
   name: 'name',
 };
 
+/**
+ * Testcase to check hello service
+ */
 export function tc_sayHello() {
   const firstName = getRandomData(DN.name).firstName;
   const response = serviceSayHello(firstName);
