@@ -1,0 +1,13 @@
+# directories 
+dist
+node_modules
+
+# files
+yarn-error.log
+
+# runtime files 
+src/exec
+
+# local file
+*.local.*
+.DS_Store

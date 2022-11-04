@@ -1,0 +1,7 @@
+metadata:
+  name: Demo hello service
+  type: event
+
+env: k6io/demo.env.yaml
+data: k6io/demo.data.yaml
+scenario: k6io/demo.scenario.yaml

@@ -1,0 +1,5 @@
+metadata:
+  name: Demo hello service
+  type: data
+
+name: k6io/name.csv

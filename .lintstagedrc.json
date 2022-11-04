@@ -1,0 +1,4 @@
+{
+  "**/*.+(ts)": "yarn eslint",
+  "**/*.+(ts|json|yml|yaml|md)": "yarn prettier --check"
+}
